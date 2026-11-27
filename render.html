@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World Today — 26 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1024px; height: 1024px; font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+         background: #f7f3ea; color: #1c2733; overflow: hidden; }
+  /* ---------- header ---------- */
+  header { height: 106px; background: #10233f; color: #fff; padding: 16px 28px 0 28px;
+           border-bottom: 5px solid #c8a24a; position: relative; }
+  header .kicker { font-size: 13px; letter-spacing: 5px; color: #c8a24a; font-weight: bold; }
+  header h1 { font-size: 44px; letter-spacing: 2px; line-height: 1.05; margin-top: 2px; }
+  header .date { position: absolute; right: 28px; top: 18px; text-align: right; }
+  header .date .d1 { font-size: 21px; font-weight: bold; letter-spacing: 1px; }
+  header .date .d2 { font-size: 13px; letter-spacing: 3px; color: #b9c6d6; margin-top: 3px; }
+  /* ---------- map ---------- */
+  .mapwrap { height: 480px; background: #d3e6f2; position: relative; }
+  .mapwrap svg { display: block; }
+  .ocean-label { font-size: 15px; letter-spacing: 3px; fill: #7fa3bd; font-style: italic; font-weight: bold; }
+  .pin-num { font-size: 15px; font-weight: bold; fill: #fff; text-anchor: middle; }
+  .map-caption { position: absolute; left: 28px; bottom: 10px; font-size: 12.5px; letter-spacing: 2px;
+                 color: #47617a; font-weight: bold; background: rgba(255,255,255,.75); padding: 3px 8px; }
+  /* ---------- legend ---------- */
+  .legend-head { height: 30px; background: #10233f; color: #fff; font-size: 13.5px; letter-spacing: 3px;
+                 font-weight: bold; padding: 7px 28px 0 28px; }
+  .legend-head span { color: #c8a24a; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; padding: 8px 14px 0 14px; }
+  .card { background: #fff; border: 1px solid #d8d2c2; border-top: 4px solid #10233f;
+          padding: 8px 11px 6px 11px; height: 118px; overflow: hidden; }
+  .card .row { display: flex; align-items: baseline; }
+  .badge { flex: 0 0 auto; width: 24px; height: 24px; border-radius: 50%; background: #c0392b; color: #fff;
+           font-size: 14px; font-weight: bold; text-align: center; line-height: 24px; margin-right: 8px; }
+  .card h2 { font-size: 15.5px; line-height: 1.15; color: #10233f; }
+  .card .tag { font-size: 10.5px; letter-spacing: 2px; color: #a33; font-weight: bold; margin: 4px 0 3px 32px; }
+  .card p { font-size: 12.5px; line-height: 1.35; color: #33414f; margin-left: 32px; }
+  footer { height: 26px; padding: 6px 28px 0 28px; font-size: 11.5px; color: #6b7280; letter-spacing: .4px; }
+  footer b { color: #10233f; }
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">THE WORLD IN ONE PICTURE</div>
+  <h1>THE WORLD TODAY</h1>
+  <div class="date">
+    <div class="d1">Thursday, 26 November 2026</div>
+    <div class="d2">9 STORIES &middot; ONE DAY &middot; EVERY TIME ZONE</div>
+  </div>
+</header>
+
+<div class="mapwrap">
+  <svg id="map" width="1024" height="480" viewBox="0 0 1024 480"></svg>
+  <div class="map-caption">NUMBERED PINS MARK WHERE EACH STORY HAPPENED &mdash; SEE THE GUIDE BELOW</div>
+</div>
+
+<div class="legend-head">NINE STORIES, PINNED ON THE MAP <span>&mdash; THURSDAY 26 NOVEMBER 2026</span></div>
+
+<div class="grid">
+  <div class="card"><div class="row"><div class="badge">1</div><h2>US tariffs on 14 partners</h2></div>
+    <div class="tag">TRADE &middot; WASHINGTON</div>
+    <p>Washington proposes new duties on China, the EU, Japan and 11 others over excess capacity.</p></div>
+  <div class="card"><div class="row"><div class="badge">2</div><h2>Drone strike kills two Italians in Kuwait</h2></div>
+    <div class="tag">CONFLICT &middot; KUWAIT CITY</div>
+    <p>Two technicians die in a drone attack Italy blames on Iran; Tehran denies any role.</p></div>
+  <div class="card"><div class="row"><div class="badge">3</div><h2>Houthis strike Saudi port</h2></div>
+    <div class="tag">CONFLICT &middot; JIZAN</div>
+    <p>A projectile hits Jizan port; defences stop a drone near Jeddah and missiles over Riyadh.</p></div>
+  <div class="card"><div class="row"><div class="badge">4</div><h2>New chief for the European Central Bank</h2></div>
+    <div class="tag">EUROPE &middot; BRUSSELS</div>
+    <p>EU leaders pick Spain&rsquo;s Pablo Hern&aacute;ndez de Cos to succeed Christine Lagarde.</p></div>
+  <div class="card"><div class="row"><div class="badge">5</div><h2>Russian refinery ablaze after drone strike</h2></div>
+    <div class="tag">UKRAINE WAR &middot; KRASNODAR</div>
+    <p>Fire guts a unit at the Slavyansk refinery as Russia fires missiles at Ukraine overnight.</p></div>
+  <div class="card"><div class="row"><div class="badge">6</div><h2>Fire in Giza kills 31</h2></div>
+    <div class="tag">DISASTER &middot; EGYPT</div>
+    <p>A vehicle crash sparks a blaze in a crowded Cairo district; the death toll climbs to 31.</p></div>
+  <div class="card"><div class="row"><div class="badge">7</div><h2>Ebola cases pass 12,000 in DR Congo</h2></div>
+    <div class="tag">HEALTH &middot; CENTRAL AFRICA</div>
+    <p>Confirmed cases top 12,000 in the second-largest Ebola outbreak ever recorded.</p></div>
+  <div class="card"><div class="row"><div class="badge">8</div><h2>13 dead in Indonesia mine disaster</h2></div>
+    <div class="tag">DISASTER &middot; WEST JAVA</div>
+    <p>Rescuers hunt for 13 workers trapped in an illegal gold mine; 13 are already confirmed dead.</p></div>
+  <div class="card"><div class="row"><div class="badge">9</div><h2>SpaceX cleared for a million satellites</h2></div>
+    <div class="tag">TECH &middot; FLORIDA</div>
+    <p>US regulators approve Musk&rsquo;s plan to launch satellites for data centres in orbit.</p></div>
+</div>
+
+<footer><b>Sources:</b> Reuters &middot; AP &middot; AFP &middot; BBC &middot; France 24 &nbsp;|&nbsp; Every story happened or was first reported on Thursday 26 November 2026.</footer>
+
+<script>
+// Equirectangular world map, drawn from simplified lon/lat coastlines.
+var W = 1024, H = 480, PAD = 8;
+function X(lon) { return PAD + (lon + 180) / 360 * (W - 2 * PAD); }
+function Y(lat) { return PAD + (90 - lat) / 180 * (H - 2 * PAD); }
+function pathOf(poly) {
+  return poly.map(function (p, i) {
+    return (i === 0 ? 'M' : 'L') + X(p[0]).toFixed(1) + ' ' + Y(p[1]).toFixed(1);
+  }).join(' ') + ' Z';
+}
+var LAND = [
+  // North America
+  [[-168,66],[-162,60],[-155,58],[-150,60],[-141,60],[-135,58],[-130,54],[-126,49],[-124,42],[-121,36],[-117,33],[-112,29],[-108,25],[-105,20],[-100,18],[-96,16],[-93,15],[-90,14],[-87,13],[-83,9],[-80,8],[-79,9],[-82,12],[-85,15],[-87,16],[-88,18],[-90,21],[-91,19],[-94,18],[-97,22],[-97,26],[-94,29],[-90,29],[-85,30],[-82,28],[-81,25],[-80,27],[-80,32],[-76,35],[-75,38],[-74,40],[-71,41],[-69,43],[-66,44],[-61,45],[-56,47],[-53,48],[-55,52],[-60,55],[-64,58],[-68,58],[-72,62],[-78,62],[-84,66],[-90,66],[-94,68],[-100,68],[-110,68],[-120,69],[-130,70],[-140,70],[-150,71],[-160,70],[-166,68]],
+  // Greenland
+  [[-58,64],[-52,60],[-44,60],[-40,63],[-33,66],[-28,68],[-22,70],[-20,73],[-25,76],[-32,77],[-45,77],[-55,75],[-60,72],[-60,68]],
+  // South America
+  [[-79,9],[-77,5],[-80,-2],[-81,-5],[-78,-10],[-74,-16],[-71,-19],[-70,-23],[-70,-30],[-72,-37],[-73,-44],[-74,-50],[-70,-54],[-66,-55],[-68,-51],[-65,-46],[-62,-41],[-58,-35],[-52,-33],[-48,-28],[-42,-23],[-39,-17],[-35,-10],[-35,-7],[-38,-4],[-42,-3],[-46,-1],[-50,0],[-52,4],[-55,6],[-59,8],[-62,10],[-66,11],[-70,12],[-74,11],[-77,9]],
+  // Africa
+  [[-17,15],[-16,20],[-14,26],[-11,30],[-6,34],[-1,35],[3,37],[9,37],[11,34],[15,32],[20,32],[25,32],[30,31],[33,31],[34,28],[35,27],[37,22],[38,19],[40,15],[43,12],[47,11],[51,12],[51,11],[47,7],[43,3],[41,-2],[40,-6],[40,-10],[38,-14],[36,-18],[34,-22],[33,-26],[30,-29],[27,-33],[22,-35],[19,-34],[16,-31],[14,-26],[13,-20],[12,-14],[12,-9],[9,-3],[9,1],[9,4],[6,4],[2,6],[-3,5],[-8,5],[-12,8],[-15,11]],
+  // Eurasia
+  [[-10,36],[-9,38],[-9,42],[-4,44],[-2,46],[-4,48],[-2,49],[1,51],[3,52],[6,53],[8,55],[8,57],[11,58],[13,56],[18,56],[20,55],[23,58],[24,59],[22,60],[20,61],[17,62],[13,63],[10,64],[7,62],[5,60],[5,58],[8,58],[11,59],[14,60],[18,61],[21,62],[24,64],[28,66],[30,70],[34,68],[40,68],[45,68],[50,69],[55,69],[60,69],[65,70],[70,72],[75,73],[80,73],[85,74],[90,75],[95,76],[100,77],[105,77],[110,74],[115,73],[120,73],[125,72],[130,72],[135,71],[140,72],[145,72],[150,70],[155,69],[160,70],[165,69],[170,67],[175,66],[178,65],[178,63],[172,62],[168,60],[163,58],[160,55],[156,51],[152,54],[148,58],[144,60],[141,58],[140,52],[141,48],[139,44],[136,43],[132,43],[129,42],[127,40],[126,38],[124,40],[121,38],[120,35],[122,32],[121,29],[119,26],[116,23],[112,22],[109,20],[107,18],[105,15],[104,10],[102,8],[100,7],[98,9],[96,13],[94,16],[92,19],[91,22],[89,22],[87,21],[85,19],[82,17],[80,14],[78,9],[76,10],[74,14],[73,18],[71,21],[68,23],[66,25],[61,25],[57,26],[56,26],[59,23],[58,20],[55,17],[52,15],[48,14],[44,13],[43,12],[40,15],[38,20],[37,24],[35,28],[34,27],[32,31],[30,36],[27,37],[23,36],[19,40],[16,38],[12,44],[8,44],[3,43],[0,39],[-2,37],[-6,36],[-9,37]],
+  // United Kingdom
+  [[-5,50],[-3,53],[-5,55],[-4,57],[-2,58],[0,57],[1,54],[1,51],[-2,51],[-4,50]],
+  // Japan
+  [[130,31],[131,33],[133,34],[135,34],[137,35],[139,35],[140,37],[141,39],[141,41],[142,43],[143,44],[145,44],[143,42],[141,40],[140,38],[139,36],[137,35],[135,34],[133,33],[131,32]],
+  // Indonesia
+  [[95,5],[98,3],[100,0],[102,-3],[104,-5],[107,-7],[110,-7],[113,-8],[116,-9],[119,-9],[120,-10],[120,-6],[119,-3],[117,-1],[115,0],[113,1],[111,2],[109,0],[107,-2],[105,-4],[103,-5],[101,-3],[99,-1],[97,2]],
+  // New Guinea
+  [[131,-1],[134,-3],[137,-3],[140,-4],[143,-5],[146,-7],[149,-9],[150,-10],[147,-9],[144,-8],[141,-7],[138,-6],[135,-4],[132,-2]],
+  // Australia
+  [[113,-22],[114,-28],[115,-33],[117,-35],[120,-34],[124,-33],[129,-32],[132,-32],[135,-35],[137,-35],[140,-38],[143,-39],[146,-39],[149,-37],[151,-34],[153,-30],[153,-27],[151,-24],[148,-20],[146,-19],[143,-16],[142,-12],[141,-13],[139,-15],[137,-12],[135,-13],[133,-12],[131,-12],[129,-14],[127,-14],[125,-15],[122,-17],[119,-19],[116,-21]],
+  // New Zealand
+  [[167,-45],[169,-43],[171,-41],[173,-40],[175,-38],[177,-38],[178,-38],[176,-40],[174,-42],[172,-43],[170,-44],[168,-46]],
+  // Madagascar
+  [[44,-16],[47,-15],[50,-16],[50,-20],[48,-24],[45,-25],[44,-22],[43,-19]],
+  // Antarctica band
+  [[-180,-70],[-120,-68],[-60,-70],[0,-68],[60,-70],[120,-68],[180,-70],[180,-90],[-180,-90]]
+];
+// [number, lon, lat]
+var PINS = [
+  [1, -77.0, 38.9], [2, 47.98, 29.38], [3, 42.55, 16.89], [4, 4.35, 50.85],
+  [5, 38.98, 45.04], [6, 31.5, 29.0], [7, 23.0, -2.5], [8, 107.6, -6.9],
+  [9, -80.6, 28.4]
+];
+var svg = document.getElementById('map');
+var NS = 'http://www.w3.org/2000/svg';
+function el(name, attrs) {
+  var e = document.createElementNS(NS, name);
+  for (var k in attrs) e.setAttribute(k, attrs[k]);
+  svg.appendChild(e);
+  return e;
+}
+// graticule
+for (var lon = -150; lon <= 150; lon += 30) {
+  el('line', { x1: X(lon), y1: Y(85), x2: X(lon), y2: Y(-85), stroke: '#bcd4e4', 'stroke-width': 1 });
+}
+for (var lat = -60; lat <= 60; lat += 30) {
+  el('line', { x1: X(-180), y1: Y(lat), x2: X(180), y2: Y(lat), stroke: '#bcd4e4', 'stroke-width': 1 });
+}
+// ocean labels (drawn after land so they stay readable over coastlines)
+function label(text, lon, lat) {
+  var t = el('text', { x: X(lon), y: Y(lat), 'class': 'ocean-label', 'text-anchor': 'middle' });
+  t.textContent = text;
+}
+// continents
+LAND.forEach(function (poly) {
+  el('path', { d: pathOf(poly), fill: '#f4efe2', stroke: '#8a9aa8', 'stroke-width': 1.4,
+               'stroke-linejoin': 'round' });
+});
+label('ATLANTIC OCEAN', -40, 30);
+label('PACIFIC OCEAN', -140, -5);
+label('PACIFIC OCEAN', 125, -48);
+label('INDIAN OCEAN', 80, -38);
+// pins
+PINS.forEach(function (p) {
+  var cx = X(p[1]), cy = Y(p[2]);
+  el('circle', { cx: cx, cy: cy, r: 14.5, fill: '#c0392b', stroke: '#fff', 'stroke-width': 2.5 });
+  var t = el('text', { x: cx, y: cy + 5.5, 'class': 'pin-num' });
+  t.textContent = String(p[0]);
+});
+</script>
+</body>
+</html>
